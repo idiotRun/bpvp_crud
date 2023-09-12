@@ -1,0 +1,264 @@
+/* Reset beberapa default styles */
+body,
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+/* Gaya dasar untuk header dan navbar */
+header {
+   background-color: #333;
+   color: #fff;
+   padding: 15px 0;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 80%;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.logo h1 a {
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Gaya untuk menu toggle hanya di mode mobile */
+#menu-toggle {
+   display: none;
+}
+
+.menu-icon {
+   font-size: 24px;
+   cursor: pointer;
+   display: none;
+}
+
+/* Gaya untuk menu desktop */
+.menu {
+   display: flex;
+   align-items: center;
+}
+
+.menu li {
+   margin-right: 20px;
+}
+
+.menu a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.menu a:hover {
+   color: #FFA500;
+}
+
+/* Gaya responsif */
+@media (max-width: 768px) {
+   #menu-toggle:checked+.menu-icon {
+      display: block;
+   }
+
+   .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+   }
+
+   .menu.active {
+      display: flex;
+   }
+
+   .menu li {
+      margin: 10px 0;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Fake Receipt';
+}
+
+.container {
+   width: 80%;
+   padding: 20px;
+   margin: auto;
+}
+
+.space {
+   margin-bottom: 20px;
+}
+
+.btnback {
+   padding: 10px 20px;
+   outline: none;
+   border-radius: 6px;
+   background-color: blue;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btnback:hover {
+   background-color: darkblue;
+}
+
+.btnsave {
+   width: 100%;
+   padding: 10px 20px;
+   outline: none;
+   border-radius: 6px;
+   background-color: orange;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btnsave:hover {
+   background-color: darkorange;
+}
+
+form {
+   width: 100%;
+}
+
+label {
+   display: inline-block;
+   width: 100%;
+   margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+   width: 100%;
+   max-width: 100%;
+   background-color: white;
+   outline: none;
+   border: 1.5px solid grey;
+   padding: 10px 20px;
+}
+
+.infwrap {
+   display: flex;
+   justify-content: space-between;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.imgwrap {
+   display: flex;
+   justify-content: center;
+}
+
+.imgwrap img {
+   max-width: 100%;
+   border: 3px double black;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+   border: 3px dashed chocolate;
+}
+
+td {
+   padding: 10px;
+}
+
+table thead {
+   background-color: bisque;
+}
+
+table thead th {
+   padding: 10px;
+}
+
+table tbody tr:hover {
+   background-color: bisque;
+}
+
+.space {
+   margin-bottom: 20px;
+}
+
+.btnadd {
+   padding: 10px 20px;
+   outline: none;
+   border-radius: 6px;
+   background-color: blue;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btnadd:hover {
+   background-color: darkblue;
+}
+
+.btnedit {
+   padding: 5px 10px;
+   outline: none;
+   border-radius: 6px;
+   background-color: orange;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btnedit:hover {
+   background-color: darkorange;
+}
+
+.btnremove {
+   padding: 5px 10px;
+   outline: none;
+   border-radius: 6px;
+   background-color: red;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btnremove:hover {
+   background-color: darkred;
+}
+
+.btnwrap {
+   display: flex;
+   gap: 5px;
+}
+
+.infwrap {
+   display: flex;
+   justify-content: space-between;
+}
+
+img:hover {
+   scale: 1.25;
+}
